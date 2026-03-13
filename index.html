@@ -225,7 +225,7 @@ white-space:nowrap;
 100%{transform:translate(-50%,-50%) scale(1);opacity:1}
 }
 
-/* MOBILE VIEW */
+/* MOBILE VIEW FIXED */
 @media (max-width:600px){
 
 h1,h2{
@@ -240,14 +240,15 @@ padding:18px 25px;
 }
 
 .gallery{
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-max-height:65vh;
-overflow-y:auto;
+grid-template-columns:1fr 1fr;
+gap:10px;
+width:100%;
+padding:0 10px;
 }
 
 .gallery-item{
-aspect-ratio:3/4;
+width:100%;
+aspect-ratio:1/1;
 }
 
 }
